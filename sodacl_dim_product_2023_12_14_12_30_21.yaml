@@ -1,0 +1,18 @@
+
+filter dim_product [daily]:
+  where: start_date > TIMESTAMP'${NOW}' - interval '1d'
+
+checks for dim_product [daily]:
+
+  # Add a schema check - https://go.soda.io/suggest-schema
+  - schema:
+      name: Any schema changes
+      warn:
+        when schema changes:
+          - column delete
+          - column add
+          - column index change
+          - column type change
+
+  # Add freshness check - https://go.soda.io/suggest-fresh
+  - freshness(start_date) < 398d

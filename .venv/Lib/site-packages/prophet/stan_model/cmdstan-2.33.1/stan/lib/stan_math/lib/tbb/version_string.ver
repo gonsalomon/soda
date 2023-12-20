@@ -1,0 +1,8 @@
+#define __TBB_VERSION_STRINGS(N) \
+#N ": BUILD_HOST\t\tfv-az1113-146" ENDL \
+#N ": BUILD_OS\t\tMicrosoft Windows [Version 10.0.20348.1970]" ENDL \
+#N ": BUILD_GCC\t\tgcc (Built by Jeroen for the R-project) 8.3.0" ENDL \
+#N ": BUILD_TARGET\tintel64" ENDL \
+#N ": BUILD_COMMAND\tg++ -O2 -DUSE_WINTHREAD -D_WIN32_WINNT=0x0502 -DMINGW_HAS_SECURE_API=1 -D__MSVCRT_VERSION__=0x0700 -msse -mthreads -m64 -mrtm  -Wall -Wno-unknown-warning-option -Wno-deprecated-copy -Wno-missing-attributes -Wno-class-memaccess -Wno-sized-deallocation   -DTBB_SUPPRESS_DEPRECATED_MESSAGES=1  -std=c++1y -I../tbb_2020.3/src -I../tbb_2020.3/src/rml/include -I../tbb_2020.3/include" ENDL
+#define __TBB_DATETIME "Tue, 10 Oct 2023 13:08:11 UTC"
+#define __TBB_VERSION_YMD 2023, 1010
