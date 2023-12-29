@@ -1,0 +1,6 @@
+
+checks for dim_product:
+
+  # Add duplicate value checks - https://go.soda.io/suggest-duplicate
+  - duplicate_count(color) = 0
+  - duplicate_count(size) = 0

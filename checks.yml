@@ -1,0 +1,64 @@
+checks for dim_customer:
+      - invalid_count(house_owner_flag) = 0: #validity 1
+            valid values: ['0', '1']
+            name: Ensure values in this flag field are binary (yes or no).
+      - invalid_percent(marital_status) = 0: #validity 2
+            valid max length: 10
+      - invalid_percent(marital_status) = 0: #validity 3
+            valid min length: 1
+      - duplicate_count(phone) = 0: #numeric 1
+            name: No duplicate phone numbers
+      - duplicate_count(email_address): #numeric 2
+            warn: when > 5
+            fail: when >= 10 
+            name: Warn when there are more that 5 duplicate email addresses and fail when greater than 10.
+      - invalid_count(first_name) = 0: #validity 4
+            invalid values: [Antonio]
+            name: Antonio es un gil
+      - distribution_difference(number_cars_owned) > 0.1: #distribution
+            method: chi_square
+            distribution reference file: ./distribution_reference.yml
+            sample: TABLESAMPLE BERNOULLI (50) REPEATABLE (61)
+      - failed rows: #failed row
+            name: Failed rows with CTE
+            fail condition: total_children = '2' and number_cars_owned >= 3
+      - $row_count: #template usage
+            parameters:
+                  table: dim_customer
+            fail: when > 0
+      - anomaly score for row_count < default #anomaly 1
+
+checks for dim_employee:
+      - max(vacation_hours) < 80:
+            name: Too many vacation hours for US Sales
+            filter: sales_territory_key = 11
+
+checks for dim_product:
+      - min_length(product_alternate_key) = 7: #numeric 3
+            name: Product alternate key should be 7 characters or longer
+      - duplicate_count(product_key) = 0: #numeric 4
+            name: Product unique key shouldn't be duplicate
+
+checks for fact_internet_sales:
+      - row_count same as fact_internet_sales_reason: #cross check
+            name: Cross check sales datasets
+      - anomaly score for missing_count(customer_key) < default: #anomaly 2
+            missing_values: [None, No Value]
+
+checks for dim_department_group:
+      - values in (department_group_name) must exist in dim_employee (department_name) #reference check
+
+checks for dim_reseller:
+      - avg_order_span between 5 and 10: #user-defined
+            name: Average time between reseller order years
+            avg_order_span expression: AVG(last_order_year - first_order_year)
+      - missing_percent(phone) = 5% #missing 1
+      - missing_percent(number_employees) < 5 #missing 2
+
+sample datasets: #sampling
+  datasets:
+    - include %
+
+discover datasets: #profiling
+  datasets:
+    - include %

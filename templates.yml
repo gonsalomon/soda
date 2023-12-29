@@ -1,0 +1,8 @@
+templates:
+  - name: row_count
+    description: Reusable SQL for writing checks.
+    author: DQTeam (formerly Azure team)
+    metric: filas
+    query: |
+      SELECT COUNT(*) AS filas
+      FROM ${table};
