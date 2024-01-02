@@ -1,0 +1,30 @@
+[2024-01-02T11:33:14.310-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.dbt_transform manual__2024-01-02T14:31:45.323140+00:00 [queued]>
+[2024-01-02T11:33:14.327-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.dbt_transform manual__2024-01-02T14:31:45.323140+00:00 [queued]>
+[2024-01-02T11:33:14.327-0300] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-01-02T11:33:14.348-0300] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): dbt_transform> on 2024-01-02 14:31:45.323140+00:00
+[2024-01-02T11:33:14.354-0300] {standard_task_runner.py:60} INFO - Started process 40149 to run task
+[2024-01-02T11:33:14.361-0300] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'model_adventureworks_sales_category', 'dbt_transform', 'manual__2024-01-02T14:31:45.323140+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/model_sales_category.py', '--cfg-path', '/tmp/tmpb0b1l2zp']
+[2024-01-02T11:33:14.365-0300] {standard_task_runner.py:88} INFO - Job 12: Subtask dbt_transform
+[2024-01-02T11:33:14.417-0300] {task_command.py:423} INFO - Running <TaskInstance: model_adventureworks_sales_category.dbt_transform manual__2024-01-02T14:31:45.323140+00:00 [running]> on host LAPTOP-MELTBPNS.
+[2024-01-02T11:33:14.492-0300] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='soda_core' AIRFLOW_CTX_DAG_ID='model_adventureworks_sales_category' AIRFLOW_CTX_TASK_ID='dbt_transform' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T14:31:45.323140+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-02T14:31:45.323140+00:00'
+[2024-01-02T11:33:14.493-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-02T11:33:14.494-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'dbt run --project-dir /home/user/projects/newproj/soda//dbt/partner_cert --select transform']
+[2024-01-02T11:33:14.503-0300] {subprocess.py:86} INFO - Output:
+[2024-01-02T11:33:17.766-0300] {subprocess.py:93} INFO - [0m14:33:17  Running with dbt=1.7.4
+[2024-01-02T11:33:18.111-0300] {subprocess.py:93} INFO - [0m14:33:18  Registered adapter: postgres=1.7.4
+[2024-01-02T11:33:18.329-0300] {subprocess.py:93} INFO - [0m14:33:18  Found 3 models, 4 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[2024-01-02T11:33:18.334-0300] {subprocess.py:93} INFO - [0m14:33:18
+[2024-01-02T11:33:18.543-0300] {subprocess.py:93} INFO - [0m14:33:18  Concurrency: 1 threads (target='dev')
+[2024-01-02T11:33:18.544-0300] {subprocess.py:93} INFO - [0m14:33:18
+[2024-01-02T11:33:18.552-0300] {subprocess.py:93} INFO - [0m14:33:18  1 of 1 START sql view model public.fact_product_category ....................... [RUN]
+[2024-01-02T11:33:18.827-0300] {subprocess.py:93} INFO - [0m14:33:18  1 of 1 OK created sql view model public.fact_product_category .................. [[32mCREATE VIEW[0m in 0.27s]
+[2024-01-02T11:33:18.863-0300] {subprocess.py:93} INFO - [0m14:33:18
+[2024-01-02T11:33:18.865-0300] {subprocess.py:93} INFO - [0m14:33:18  Finished running 1 view model in 0 hours 0 minutes and 0.53 seconds (0.53s).
+[2024-01-02T11:33:18.885-0300] {subprocess.py:93} INFO - [0m14:33:18
+[2024-01-02T11:33:18.886-0300] {subprocess.py:93} INFO - [0m14:33:18  [32mCompleted successfully[0m
+[2024-01-02T11:33:18.887-0300] {subprocess.py:93} INFO - [0m14:33:18
+[2024-01-02T11:33:18.889-0300] {subprocess.py:93} INFO - [0m14:33:18  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2024-01-02T11:33:20.185-0300] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-02T11:33:20.211-0300] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=model_adventureworks_sales_category, task_id=dbt_transform, execution_date=20240102T143145, start_date=20240102T143314, end_date=20240102T143320
+[2024-01-02T11:33:20.238-0300] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-02T11:33:20.272-0300] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

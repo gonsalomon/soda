@@ -1,0 +1,18 @@
+[2024-01-02T10:53:52.562-0300] {processor.py:161} INFO - Started process (PID=14567) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2024-01-02T10:53:52.564-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2024-01-02T10:53:52.564-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.564-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2024-01-02T10:53:52.574-0300] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2024-01-02T10:53:52.682-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.681-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_sensors
+[2024-01-02T10:53:52.694-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.692-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_sensors
+[2024-01-02T10:53:52.708-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.708-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_sensors
+[2024-01-02T10:53:52.709-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.709-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:52.718-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.718-0300] {dag.py:3055} INFO - Creating ORM DAG for example_sensors
+[2024-01-02T10:53:52.719-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:52.719-0300] {dag.py:3820} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2024-01-02T10:53:52.748-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.190 seconds
+[2024-01-02T10:54:44.478-0300] {processor.py:161} INFO - Started process (PID=15240) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2024-01-02T10:54:44.486-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2024-01-02T10:54:44.487-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:44.486-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2024-01-02T10:54:44.497-0300] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2024-01-02T10:54:44.512-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:44.512-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:44.521-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:44.521-0300] {dag.py:3820} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2024-01-02T10:54:44.546-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.071 seconds

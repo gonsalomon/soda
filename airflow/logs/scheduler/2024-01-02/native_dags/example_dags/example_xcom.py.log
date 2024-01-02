@@ -1,0 +1,18 @@
+[2024-01-02T10:53:38.169-0300] {processor.py:161} INFO - Started process (PID=14348) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-01-02T10:53:38.170-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-01-02T10:53:38.171-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.171-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-01-02T10:53:38.187-0300] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-01-02T10:53:38.410-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.409-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_xcom
+[2024-01-02T10:53:38.440-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.439-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_xcom
+[2024-01-02T10:53:38.499-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.498-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_xcom
+[2024-01-02T10:53:38.499-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.499-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:38.525-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.525-0300] {dag.py:3055} INFO - Creating ORM DAG for example_xcom
+[2024-01-02T10:53:38.544-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:38.544-0300] {dag.py:3820} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00, run_after=2021-01-01T00:00:00+00:00
+[2024-01-02T10:53:38.639-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.474 seconds
+[2024-01-02T10:54:30.405-0300] {processor.py:161} INFO - Started process (PID=15022) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-01-02T10:54:30.407-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-01-02T10:54:30.408-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:30.408-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-01-02T10:54:30.420-0300] {processor.py:840} INFO - DAG(s) 'example_xcom' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-01-02T10:54:30.445-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:30.444-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:30.470-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:30.470-0300] {dag.py:3820} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00, run_after=2021-01-01T00:00:00+00:00
+[2024-01-02T10:54:30.512-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.111 seconds

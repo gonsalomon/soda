@@ -1,0 +1,18 @@
+[2024-01-02T10:53:49.794-0300] {processor.py:161} INFO - Started process (PID=14549) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2024-01-02T10:53:49.796-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-01-02T10:53:49.797-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.797-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2024-01-02T10:53:49.806-0300] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2024-01-02T10:53:49.906-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.905-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_complex
+[2024-01-02T10:53:49.918-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.918-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_complex
+[2024-01-02T10:53:49.929-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.929-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_complex
+[2024-01-02T10:53:49.929-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.929-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:49.937-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.937-0300] {dag.py:3055} INFO - Creating ORM DAG for example_complex
+[2024-01-02T10:53:49.937-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:49.937-0300] {dag.py:3820} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-01-02T10:53:49.958-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.168 seconds
+[2024-01-02T10:54:41.986-0300] {processor.py:161} INFO - Started process (PID=15225) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2024-01-02T10:54:41.987-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-01-02T10:54:41.988-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:41.988-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2024-01-02T10:54:42.000-0300] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2024-01-02T10:54:42.029-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:42.028-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:42.040-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:42.040-0300] {dag.py:3820} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-01-02T10:54:42.071-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.088 seconds

@@ -1,0 +1,18 @@
+[2024-01-02T10:54:09.402-0300] {processor.py:161} INFO - Started process (PID=14688) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2024-01-02T10:54:09.403-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2024-01-02T10:54:09.403-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.403-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2024-01-02T10:54:09.414-0300] {processor.py:840} INFO - DAG(s) 'tutorial_taskflow_api_virtualenv' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2024-01-02T10:54:09.547-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.545-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:tutorial_taskflow_api_virtualenv
+[2024-01-02T10:54:09.559-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.559-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:tutorial_taskflow_api_virtualenv
+[2024-01-02T10:54:09.572-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.571-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:tutorial_taskflow_api_virtualenv
+[2024-01-02T10:54:09.572-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.572-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:09.584-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.584-0300] {dag.py:3055} INFO - Creating ORM DAG for tutorial_taskflow_api_virtualenv
+[2024-01-02T10:54:09.585-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:09.585-0300] {dag.py:3820} INFO - Setting next_dagrun for tutorial_taskflow_api_virtualenv to None, run_after=None
+[2024-01-02T10:54:09.615-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.216 seconds
+[2024-01-02T10:55:00.275-0300] {processor.py:161} INFO - Started process (PID=15355) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2024-01-02T10:55:00.282-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2024-01-02T10:55:00.283-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:00.283-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2024-01-02T10:55:00.291-0300] {processor.py:840} INFO - DAG(s) 'tutorial_taskflow_api_virtualenv' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2024-01-02T10:55:00.311-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:00.309-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:55:00.320-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:00.320-0300] {dag.py:3820} INFO - Setting next_dagrun for tutorial_taskflow_api_virtualenv to None, run_after=None
+[2024-01-02T10:55:00.346-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.074 seconds

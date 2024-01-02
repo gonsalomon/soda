@@ -1,0 +1,18 @@
+[2024-01-02T10:54:18.617-0300] {processor.py:161} INFO - Started process (PID=14815) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-01-02T10:54:18.617-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-01-02T10:54:18.618-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.618-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-01-02T10:54:18.635-0300] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-01-02T10:54:18.749-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.748-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_subdag_operator
+[2024-01-02T10:54:18.761-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.760-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_subdag_operator
+[2024-01-02T10:54:18.769-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.768-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_subdag_operator
+[2024-01-02T10:54:18.769-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.769-0300] {dag.py:3033} INFO - Sync 3 DAGs
+[2024-01-02T10:54:18.777-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.777-0300] {dag.py:3055} INFO - Creating ORM DAG for example_subdag_operator.section-1
+[2024-01-02T10:54:18.777-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.777-0300] {dag.py:3055} INFO - Creating ORM DAG for example_subdag_operator.section-2
+[2024-01-02T10:54:18.778-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.778-0300] {dag.py:3055} INFO - Creating ORM DAG for example_subdag_operator
+[2024-01-02T10:54:18.783-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.783-0300] {dag.py:3820} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2024-01-02T10:54:18.785-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.785-0300] {dag.py:3820} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-01-02T10:54:18.785-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.785-0300] {dag.py:3820} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-01-02T10:54:18.791-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.791-0300] {dag.py:3033} INFO - Sync 2 DAGs
+[2024-01-02T10:54:18.796-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.796-0300] {dag.py:3820} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-01-02T10:54:18.798-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:18.798-0300] {dag.py:3820} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-01-02T10:54:18.815-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py took 0.200 seconds

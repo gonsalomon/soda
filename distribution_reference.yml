@@ -1,0 +1,17 @@
+dataset: dim_customer
+column: number_cars_owned
+distribution_type: categorical
+sample: TABLESAMPLE BERNOULLI (50) REPEATABLE (61)
+distribution_reference:
+  weights:
+  - 0.34932914953473276
+  - 0.2641744211209695
+  - 0.22927937675827742
+  - 0.08899588833585804
+  - 0.06822116425016231
+  bins:
+  - 2
+  - 1
+  - 0
+  - 3
+  - 4

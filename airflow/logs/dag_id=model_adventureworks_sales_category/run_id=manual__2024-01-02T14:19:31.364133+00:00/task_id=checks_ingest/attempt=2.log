@@ -1,0 +1,35 @@
+[2024-01-02T11:24:37.293-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.checks_ingest manual__2024-01-02T14:19:31.364133+00:00 [queued]>
+[2024-01-02T11:24:37.300-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.checks_ingest manual__2024-01-02T14:19:31.364133+00:00 [queued]>
+[2024-01-02T11:24:37.300-0300] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2024-01-02T11:24:37.315-0300] {taskinstance.py:2192} INFO - Executing <Task(PythonVirtualenvOperator): checks_ingest> on 2024-01-02 14:19:31.364133+00:00
+[2024-01-02T11:24:37.318-0300] {standard_task_runner.py:60} INFO - Started process 34793 to run task
+[2024-01-02T11:24:37.322-0300] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'model_adventureworks_sales_category', 'checks_ingest', 'manual__2024-01-02T14:19:31.364133+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/model_sales_category.py', '--cfg-path', '/tmp/tmp39qagn1u']
+[2024-01-02T11:24:37.324-0300] {standard_task_runner.py:88} INFO - Job 10: Subtask checks_ingest
+[2024-01-02T11:24:37.360-0300] {task_command.py:423} INFO - Running <TaskInstance: model_adventureworks_sales_category.checks_ingest manual__2024-01-02T14:19:31.364133+00:00 [running]> on host LAPTOP-MELTBPNS.
+[2024-01-02T11:24:37.417-0300] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='soda_core' AIRFLOW_CTX_DAG_ID='model_adventureworks_sales_category' AIRFLOW_CTX_TASK_ID='checks_ingest' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T14:19:31.364133+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-02T14:19:31.364133+00:00'
+[2024-01-02T11:24:37.420-0300] {process_utils.py:182} INFO - Executing cmd: /home/user/projects/newproj/soda/.venv/bin/python -m virtualenv /tmp/venvo2tmr06s --python=python
+[2024-01-02T11:24:37.420-0300] {process_utils.py:186} INFO - Output:
+[2024-01-02T11:24:37.439-0300] {process_utils.py:190} INFO - /home/user/projects/newproj/soda/.venv/bin/python: No module named virtualenv
+[2024-01-02T11:24:37.441-0300] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 400, in execute
+    return super().execute(context=serializable_context)
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 711, in execute_callable
+    self._prepare_venv(tmp_path)
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 623, in _prepare_venv
+    prepare_virtualenv(
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/utils/python_virtualenv.py", line 104, in prepare_virtualenv
+    execute_in_subprocess(virtualenv_cmd)
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/utils/process_utils.py", line 171, in execute_in_subprocess
+    execute_in_subprocess_with_kwargs(cmd, cwd=cwd)
+  File "/home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/utils/process_utils.py", line 194, in execute_in_subprocess_with_kwargs
+    raise subprocess.CalledProcessError(exit_code, cmd)
+subprocess.CalledProcessError: Command '['/home/user/projects/newproj/soda/.venv/bin/python', '-m', 'virtualenv', '/tmp/venvo2tmr06s', '--python=python']' returned non-zero exit status 1.
+[2024-01-02T11:24:37.445-0300] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=model_adventureworks_sales_category, task_id=checks_ingest, execution_date=20240102T141931, start_date=20240102T142437, end_date=20240102T142437
+[2024-01-02T11:24:37.463-0300] {standard_task_runner.py:107} ERROR - Failed to execute job 10 for task checks_ingest (Command '['/home/user/projects/newproj/soda/.venv/bin/python', '-m', 'virtualenv', '/tmp/venvo2tmr06s', '--python=python']' returned non-zero exit status 1.; 34793)
+[2024-01-02T11:24:37.494-0300] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-02T11:24:37.510-0300] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

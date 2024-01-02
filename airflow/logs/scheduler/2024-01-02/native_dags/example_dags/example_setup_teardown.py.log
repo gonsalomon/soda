@@ -1,0 +1,18 @@
+[2024-01-02T10:53:33.532-0300] {processor.py:161} INFO - Started process (PID=14270) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-01-02T10:53:33.533-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2024-01-02T10:53:33.534-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.534-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-01-02T10:53:33.554-0300] {processor.py:840} INFO - DAG(s) 'example_setup_teardown' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-01-02T10:53:33.741-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.740-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_setup_teardown
+[2024-01-02T10:53:33.762-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.759-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_setup_teardown
+[2024-01-02T10:53:33.780-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.778-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_setup_teardown
+[2024-01-02T10:53:33.781-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.780-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:33.800-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.800-0300] {dag.py:3055} INFO - Creating ORM DAG for example_setup_teardown
+[2024-01-02T10:53:33.807-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:33.807-0300] {dag.py:3820} INFO - Setting next_dagrun for example_setup_teardown to 2024-01-01T00:00:00+00:00, run_after=2024-01-02T00:00:00+00:00
+[2024-01-02T10:53:33.837-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.309 seconds
+[2024-01-02T10:54:27.398-0300] {processor.py:161} INFO - Started process (PID=14972) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-01-02T10:54:27.400-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2024-01-02T10:54:27.401-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:27.400-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-01-02T10:54:27.407-0300] {processor.py:840} INFO - DAG(s) 'example_setup_teardown' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-01-02T10:54:27.429-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:27.429-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:27.452-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:27.452-0300] {dag.py:3820} INFO - Setting next_dagrun for example_setup_teardown to 2024-01-01T00:00:00+00:00, run_after=2024-01-02T00:00:00+00:00
+[2024-01-02T10:54:27.489-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.094 seconds

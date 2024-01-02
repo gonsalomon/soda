@@ -33,7 +33,7 @@ kubectl get nodes
 helm repo add soda-agent https://helm.soda.io/soda-agent/
 
 # Deploy del agent dentro del cluster de kubernetes de Azure
-helm install soda-agent soda-agent/soda-agent --set soda.agent.name=myuniqueagent --set soda.polling.interval=5 --set soda.cloud.endpoint=https://cloud.us.soda.io --set soda.apikey.id=*** --set soda.apikey.secret=**** --set soda.scanlauncher.idle.enabled=true --set soda.scanlauncher.idle.replicas=1 --namespace soda-agent
+helm install soda-agent soda-agent/soda-agent --set soda.agent.name=myuniqueagent --set soda.polling.interval=5 --set soda.cloud.endpoint=https://cloud.us.soda.io --set soda.apikey.id=*** --set soda.apikey.secret=**** --set soda.scanlauncher.idle.enabled=true --set soda.scanlauncher.idle.replicas=1
 
 # Verificamos que el agent y el orchestrator esten corriendo
 kubectl get pods

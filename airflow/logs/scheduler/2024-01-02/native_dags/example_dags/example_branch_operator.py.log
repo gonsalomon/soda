@@ -1,0 +1,18 @@
+[2024-01-02T10:53:51.028-0300] {processor.py:161} INFO - Started process (PID=14550) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-01-02T10:53:51.029-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-01-02T10:53:51.030-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.030-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-01-02T10:53:51.049-0300] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-01-02T10:53:51.165-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.164-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_branch_operator
+[2024-01-02T10:53:51.179-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.178-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_branch_operator
+[2024-01-02T10:53:51.191-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.189-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_branch_operator
+[2024-01-02T10:53:51.192-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.192-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:51.203-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.203-0300] {dag.py:3055} INFO - Creating ORM DAG for example_branch_operator
+[2024-01-02T10:53:51.213-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:51.212-0300] {dag.py:3820} INFO - Setting next_dagrun for example_branch_operator to 2024-01-01T00:00:00+00:00, run_after=2024-01-02T00:00:00+00:00
+[2024-01-02T10:53:51.234-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py took 0.211 seconds
+[2024-01-02T10:54:43.126-0300] {processor.py:161} INFO - Started process (PID=15232) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-01-02T10:54:43.129-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-01-02T10:54:43.130-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:43.130-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-01-02T10:54:43.147-0300] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-01-02T10:54:43.167-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:43.167-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:43.185-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:43.185-0300] {dag.py:3820} INFO - Setting next_dagrun for example_branch_operator to 2024-01-01T00:00:00+00:00, run_after=2024-01-02T00:00:00+00:00
+[2024-01-02T10:54:43.211-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py took 0.090 seconds

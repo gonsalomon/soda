@@ -1,0 +1,5 @@
+[2024-01-02T10:54:23.973-0300] {processor.py:161} INFO - Started process (PID=14916) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py
+[2024-01-02T10:54:23.973-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py for tasks to queue
+[2024-01-02T10:54:23.974-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:23.974-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py
+[2024-01-02T10:54:23.977-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py
+[2024-01-02T10:54:23.985-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py took 0.015 seconds

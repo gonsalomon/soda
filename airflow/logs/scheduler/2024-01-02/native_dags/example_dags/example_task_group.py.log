@@ -1,0 +1,18 @@
+[2024-01-02T10:53:44.642-0300] {processor.py:161} INFO - Started process (PID=14470) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-01-02T10:53:44.644-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-01-02T10:53:44.645-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.645-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-01-02T10:53:44.656-0300] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-01-02T10:53:44.750-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.749-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_task_group
+[2024-01-02T10:53:44.765-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.765-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_task_group
+[2024-01-02T10:53:44.772-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.772-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_task_group
+[2024-01-02T10:53:44.773-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.773-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:44.783-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.783-0300] {dag.py:3055} INFO - Creating ORM DAG for example_task_group
+[2024-01-02T10:53:44.791-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:44.791-0300] {dag.py:3820} INFO - Setting next_dagrun for example_task_group to 2024-01-01T00:00:00+00:00, run_after=2024-01-02T00:00:00+00:00
+[2024-01-02T10:53:44.813-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.174 seconds
+[2024-01-02T10:54:36.635-0300] {processor.py:161} INFO - Started process (PID=15124) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-01-02T10:54:36.637-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-01-02T10:54:36.638-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:36.637-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-01-02T10:54:36.646-0300] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-01-02T10:54:36.663-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:36.663-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:36.680-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:36.680-0300] {dag.py:3820} INFO - Setting next_dagrun for example_task_group to 2024-01-01T00:00:00+00:00, run_after=2024-01-02T00:00:00+00:00
+[2024-01-02T10:54:36.703-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.070 seconds

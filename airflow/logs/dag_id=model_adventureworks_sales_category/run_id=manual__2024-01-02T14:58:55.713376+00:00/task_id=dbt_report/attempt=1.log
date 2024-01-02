@@ -1,0 +1,32 @@
+[2024-01-02T12:01:43.339-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.dbt_report manual__2024-01-02T14:58:55.713376+00:00 [queued]>
+[2024-01-02T12:01:43.350-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.dbt_report manual__2024-01-02T14:58:55.713376+00:00 [queued]>
+[2024-01-02T12:01:43.350-0300] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-01-02T12:01:43.371-0300] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): dbt_report> on 2024-01-02 14:58:55.713376+00:00
+[2024-01-02T12:01:43.375-0300] {standard_task_runner.py:60} INFO - Started process 65154 to run task
+[2024-01-02T12:01:43.380-0300] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'model_adventureworks_sales_category', 'dbt_report', 'manual__2024-01-02T14:58:55.713376+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/model_sales_category.py', '--cfg-path', '/tmp/tmphz_uc7h4']
+[2024-01-02T12:01:43.383-0300] {standard_task_runner.py:88} INFO - Job 22: Subtask dbt_report
+[2024-01-02T12:01:43.421-0300] {task_command.py:423} INFO - Running <TaskInstance: model_adventureworks_sales_category.dbt_report manual__2024-01-02T14:58:55.713376+00:00 [running]> on host LAPTOP-MELTBPNS.
+[2024-01-02T12:01:43.480-0300] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='soda_core' AIRFLOW_CTX_DAG_ID='model_adventureworks_sales_category' AIRFLOW_CTX_TASK_ID='dbt_report' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T14:58:55.713376+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-02T14:58:55.713376+00:00'
+[2024-01-02T12:01:43.480-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-02T12:01:43.481-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'dbt run --project-dir /home/user/projects/newproj/soda//dbt/partner_cert --select report']
+[2024-01-02T12:01:43.486-0300] {subprocess.py:86} INFO - Output:
+[2024-01-02T12:01:46.796-0300] {subprocess.py:93} INFO - [0m15:01:46  Running with dbt=1.7.4
+[2024-01-02T12:01:47.255-0300] {subprocess.py:93} INFO - [0m15:01:47  Registered adapter: postgres=1.7.4
+[2024-01-02T12:01:47.381-0300] {subprocess.py:93} INFO - [0m15:01:47  Found 3 models, 4 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[2024-01-02T12:01:47.383-0300] {subprocess.py:93} INFO - [0m15:01:47
+[2024-01-02T12:01:47.545-0300] {subprocess.py:93} INFO - [0m15:01:47  Concurrency: 1 threads (target='dev')
+[2024-01-02T12:01:47.545-0300] {subprocess.py:93} INFO - [0m15:01:47
+[2024-01-02T12:01:47.550-0300] {subprocess.py:93} INFO - [0m15:01:47  1 of 2 START sql view model public.report_category_sales ....................... [RUN]
+[2024-01-02T12:01:47.694-0300] {subprocess.py:93} INFO - [0m15:01:47  1 of 2 OK created sql view model public.report_category_sales .................. [[32mCREATE VIEW[0m in 0.14s]
+[2024-01-02T12:01:47.701-0300] {subprocess.py:93} INFO - [0m15:01:47  2 of 2 START sql view model public.report_subcategory_sales .................... [RUN]
+[2024-01-02T12:01:47.794-0300] {subprocess.py:93} INFO - [0m15:01:47  2 of 2 OK created sql view model public.report_subcategory_sales ............... [[32mCREATE VIEW[0m in 0.09s]
+[2024-01-02T12:01:47.827-0300] {subprocess.py:93} INFO - [0m15:01:47
+[2024-01-02T12:01:47.828-0300] {subprocess.py:93} INFO - [0m15:01:47  Finished running 2 view models in 0 hours 0 minutes and 0.44 seconds (0.44s).
+[2024-01-02T12:01:47.842-0300] {subprocess.py:93} INFO - [0m15:01:47
+[2024-01-02T12:01:47.843-0300] {subprocess.py:93} INFO - [0m15:01:47  [32mCompleted successfully[0m
+[2024-01-02T12:01:47.844-0300] {subprocess.py:93} INFO - [0m15:01:47
+[2024-01-02T12:01:47.845-0300] {subprocess.py:93} INFO - [0m15:01:47  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2024-01-02T12:01:49.251-0300] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-02T12:01:49.280-0300] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=model_adventureworks_sales_category, task_id=dbt_report, execution_date=20240102T145855, start_date=20240102T150143, end_date=20240102T150149
+[2024-01-02T12:01:49.339-0300] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-02T12:01:49.369-0300] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

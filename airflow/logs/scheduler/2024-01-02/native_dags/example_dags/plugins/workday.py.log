@@ -1,0 +1,5 @@
+[2024-01-02T10:54:22.546-0300] {processor.py:161} INFO - Started process (PID=14867) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2024-01-02T10:54:22.547-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2024-01-02T10:54:22.548-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:22.547-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2024-01-02T10:54:22.866-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2024-01-02T10:54:22.879-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 0.335 seconds

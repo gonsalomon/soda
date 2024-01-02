@@ -1,0 +1,24 @@
+[2024-01-02T10:53:41.239-0300] {processor.py:161} INFO - Started process (PID=14421) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2024-01-02T10:53:41.241-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py for tasks to queue
+[2024-01-02T10:53:41.243-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.242-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2024-01-02T10:53:41.257-0300] {processor.py:840} INFO - DAG(s) 'example_external_task_marker_parent', 'example_external_task_marker_child' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2024-01-02T10:53:41.377-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.376-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_external_task_marker_parent
+[2024-01-02T10:53:41.413-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.412-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_external_task_marker_parent
+[2024-01-02T10:53:41.450-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.448-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_external_task_marker_parent
+[2024-01-02T10:53:41.505-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.504-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_external_task_marker_child
+[2024-01-02T10:53:41.518-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.518-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_external_task_marker_child
+[2024-01-02T10:53:41.533-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.533-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_external_task_marker_child
+[2024-01-02T10:53:41.534-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.534-0300] {dag.py:3033} INFO - Sync 2 DAGs
+[2024-01-02T10:53:41.550-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.550-0300] {dag.py:3055} INFO - Creating ORM DAG for example_external_task_marker_parent
+[2024-01-02T10:53:41.551-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.551-0300] {dag.py:3055} INFO - Creating ORM DAG for example_external_task_marker_child
+[2024-01-02T10:53:41.551-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.551-0300] {dag.py:3820} INFO - Setting next_dagrun for example_external_task_marker_child to None, run_after=None
+[2024-01-02T10:53:41.552-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:41.552-0300] {dag.py:3820} INFO - Setting next_dagrun for example_external_task_marker_parent to None, run_after=None
+[2024-01-02T10:53:41.584-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.349 seconds
+[2024-01-02T10:54:32.601-0300] {processor.py:161} INFO - Started process (PID=15061) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2024-01-02T10:54:32.603-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py for tasks to queue
+[2024-01-02T10:54:32.604-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:32.604-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2024-01-02T10:54:32.609-0300] {processor.py:840} INFO - DAG(s) 'example_external_task_marker_child', 'example_external_task_marker_parent' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2024-01-02T10:54:32.630-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:32.630-0300] {dag.py:3033} INFO - Sync 2 DAGs
+[2024-01-02T10:54:32.640-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:32.639-0300] {dag.py:3820} INFO - Setting next_dagrun for example_external_task_marker_child to None, run_after=None
+[2024-01-02T10:54:32.644-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:32.644-0300] {dag.py:3820} INFO - Setting next_dagrun for example_external_task_marker_parent to None, run_after=None
+[2024-01-02T10:54:32.666-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.067 seconds

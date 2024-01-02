@@ -1,0 +1,18 @@
+[2024-01-02T10:54:01.344-0300] {processor.py:161} INFO - Started process (PID=14625) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-01-02T10:54:01.345-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2024-01-02T10:54:01.346-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.345-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-01-02T10:54:01.359-0300] {processor.py:840} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-01-02T10:54:01.476-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.474-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2024-01-02T10:54:01.486-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.486-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2024-01-02T10:54:01.497-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.497-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2024-01-02T10:54:01.497-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.497-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:01.505-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.505-0300] {dag.py:3055} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2024-01-02T10:54:01.506-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:01.506-0300] {dag.py:3820} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2024-01-02T10:54:01.532-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.192 seconds
+[2024-01-02T10:54:51.024-0300] {processor.py:161} INFO - Started process (PID=15283) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-01-02T10:54:51.027-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2024-01-02T10:54:51.028-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:51.028-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-01-02T10:54:51.039-0300] {processor.py:840} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-01-02T10:54:51.118-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:51.118-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:51.145-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:51.145-0300] {dag.py:3820} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2024-01-02T10:54:51.169-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.150 seconds

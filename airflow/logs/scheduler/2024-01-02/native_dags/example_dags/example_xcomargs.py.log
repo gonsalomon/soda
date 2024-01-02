@@ -1,0 +1,24 @@
+[2024-01-02T10:54:14.642-0300] {processor.py:161} INFO - Started process (PID=14729) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-01-02T10:54:14.643-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2024-01-02T10:54:14.644-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.643-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-01-02T10:54:14.651-0300] {processor.py:840} INFO - DAG(s) 'example_xcom_args', 'example_xcom_args_with_operators' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-01-02T10:54:14.739-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.738-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_xcom_args
+[2024-01-02T10:54:14.749-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.749-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_xcom_args
+[2024-01-02T10:54:14.758-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.758-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_xcom_args
+[2024-01-02T10:54:14.778-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.778-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_xcom_args_with_operators
+[2024-01-02T10:54:14.785-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.785-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_xcom_args_with_operators
+[2024-01-02T10:54:14.795-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.794-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:example_xcom_args_with_operators
+[2024-01-02T10:54:14.795-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.795-0300] {dag.py:3033} INFO - Sync 2 DAGs
+[2024-01-02T10:54:14.802-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.802-0300] {dag.py:3055} INFO - Creating ORM DAG for example_xcom_args
+[2024-01-02T10:54:14.803-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.803-0300] {dag.py:3055} INFO - Creating ORM DAG for example_xcom_args_with_operators
+[2024-01-02T10:54:14.803-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.803-0300] {dag.py:3820} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2024-01-02T10:54:14.804-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:14.804-0300] {dag.py:3820} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2024-01-02T10:54:14.823-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py took 0.184 seconds
+[2024-01-02T10:55:04.675-0300] {processor.py:161} INFO - Started process (PID=15393) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-01-02T10:55:04.683-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2024-01-02T10:55:04.684-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:04.683-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-01-02T10:55:04.692-0300] {processor.py:840} INFO - DAG(s) 'example_xcom_args_with_operators', 'example_xcom_args' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-01-02T10:55:04.711-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:04.711-0300] {dag.py:3033} INFO - Sync 2 DAGs
+[2024-01-02T10:55:04.720-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:04.719-0300] {dag.py:3820} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2024-01-02T10:55:04.723-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:55:04.723-0300] {dag.py:3820} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2024-01-02T10:55:04.749-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py took 0.077 seconds

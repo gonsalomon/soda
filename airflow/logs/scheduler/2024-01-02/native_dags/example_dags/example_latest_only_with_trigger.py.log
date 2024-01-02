@@ -1,0 +1,18 @@
+[2024-01-02T10:53:36.592-0300] {processor.py:161} INFO - Started process (PID=14338) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-01-02T10:53:36.593-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2024-01-02T10:53:36.595-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.594-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-01-02T10:53:36.609-0300] {processor.py:840} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-01-02T10:53:36.755-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.754-0300] {override.py:1769} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2024-01-02T10:53:36.838-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.837-0300] {override.py:1769} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2024-01-02T10:53:36.873-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.872-0300] {override.py:1769} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2024-01-02T10:53:36.873-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.873-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:53:36.904-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.904-0300] {dag.py:3055} INFO - Creating ORM DAG for latest_only_with_trigger
+[2024-01-02T10:53:36.919-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:53:36.919-0300] {dag.py:3820} INFO - Setting next_dagrun for latest_only_with_trigger to 2024-01-02T08:00:00+00:00, run_after=2024-01-02T12:00:00+00:00
+[2024-01-02T10:53:37.025-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.437 seconds
+[2024-01-02T10:54:29.125-0300] {processor.py:161} INFO - Started process (PID=15018) to work on /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-01-02T10:54:29.133-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2024-01-02T10:54:29.135-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:29.134-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-01-02T10:54:29.142-0300] {processor.py:840} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-01-02T10:54:29.164-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:29.162-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T10:54:29.198-0300] {logging_mixin.py:188} INFO - [2024-01-02T10:54:29.197-0300] {dag.py:3820} INFO - Setting next_dagrun for latest_only_with_trigger to 2024-01-02T08:00:00+00:00, run_after=2024-01-02T12:00:00+00:00
+[2024-01-02T10:54:29.249-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/.venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.129 seconds
