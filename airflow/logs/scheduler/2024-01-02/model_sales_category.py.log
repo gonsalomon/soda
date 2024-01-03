@@ -950,3 +950,45 @@
 [2024-01-02T12:12:37.806-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:12:37.805-0300] {dag.py:3033} INFO - Sync 1 DAGs
 [2024-01-02T12:12:37.837-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:12:37.836-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
 [2024-01-02T12:12:37.871-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.132 seconds
+[2024-01-02T12:13:08.014-0300] {processor.py:161} INFO - Started process (PID=71450) to work on /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:13:08.016-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py for tasks to queue
+[2024-01-02T12:13:08.016-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:13:08.016-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:13:08.030-0300] {processor.py:840} INFO - DAG(s) 'model_adventureworks_sales_category' retrieved from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:13:08.051-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:13:08.050-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T12:13:08.069-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:13:08.069-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
+[2024-01-02T12:13:08.093-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.081 seconds
+[2024-01-02T12:13:38.179-0300] {processor.py:161} INFO - Started process (PID=71810) to work on /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:13:38.180-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py for tasks to queue
+[2024-01-02T12:13:38.180-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:13:38.180-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:13:38.194-0300] {processor.py:840} INFO - DAG(s) 'model_adventureworks_sales_category' retrieved from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:13:38.213-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:13:38.213-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T12:13:38.230-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:13:38.229-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
+[2024-01-02T12:13:38.256-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.080 seconds
+[2024-01-02T12:14:08.367-0300] {processor.py:161} INFO - Started process (PID=72087) to work on /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:14:08.368-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py for tasks to queue
+[2024-01-02T12:14:08.369-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:14:08.368-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:14:08.383-0300] {processor.py:840} INFO - DAG(s) 'model_adventureworks_sales_category' retrieved from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:14:08.415-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:14:08.415-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T12:14:08.437-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:14:08.436-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
+[2024-01-02T12:14:08.474-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.110 seconds
+[2024-01-02T12:14:38.642-0300] {processor.py:161} INFO - Started process (PID=72380) to work on /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:14:38.643-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py for tasks to queue
+[2024-01-02T12:14:38.644-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:14:38.644-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:14:38.653-0300] {processor.py:840} INFO - DAG(s) 'model_adventureworks_sales_category' retrieved from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:14:38.675-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:14:38.675-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T12:14:38.692-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:14:38.692-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
+[2024-01-02T12:14:38.712-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.073 seconds
+[2024-01-02T12:15:08.805-0300] {processor.py:161} INFO - Started process (PID=72555) to work on /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:15:08.812-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py for tasks to queue
+[2024-01-02T12:15:08.813-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:15:08.813-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:15:08.823-0300] {processor.py:840} INFO - DAG(s) 'model_adventureworks_sales_category' retrieved from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:15:08.844-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:15:08.844-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T12:15:08.858-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:15:08.857-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
+[2024-01-02T12:15:08.879-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.077 seconds
+[2024-01-02T12:15:38.971-0300] {processor.py:161} INFO - Started process (PID=72856) to work on /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:15:38.974-0300] {processor.py:830} INFO - Processing file /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py for tasks to queue
+[2024-01-02T12:15:38.974-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:15:38.974-0300] {dagbag.py:538} INFO - Filling up the DagBag from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:15:38.985-0300] {processor.py:840} INFO - DAG(s) 'model_adventureworks_sales_category' retrieved from /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py
+[2024-01-02T12:15:39.006-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:15:39.006-0300] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-02T12:15:39.019-0300] {logging_mixin.py:188} INFO - [2024-01-02T12:15:39.019-0300] {dag.py:3820} INFO - Setting next_dagrun for model_adventureworks_sales_category to 2024-01-02T00:00:00+00:00, run_after=2024-01-03T00:00:00+00:00
+[2024-01-02T12:15:39.043-0300] {processor.py:183} INFO - Processing /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py took 0.075 seconds
