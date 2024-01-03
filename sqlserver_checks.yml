@@ -1,0 +1,64 @@
+# i. 4 different Validity Metrics
+checks for Customer:
+- invalid_count(Phone) = 0:
+      valid format: phone number
+      name: Ensure values are formatted as phone number.
+- invalid_count(NameStyle) = 0:
+      valid values: ['0', '1']
+      name: Ensure values in this flag field are binary (yes or no).
+- invalid_percent(CustomerID) < 5%:
+      valid format: positive integer
+      name: Ensure a max of 5% of negative values for CustomerID.
+# # iv. 1 Cross Check
+- row_count same as CustomerAddress:
+      name: Cross check customer datasets
+
+
+checks for Product:
+- invalid_percent(ListPrice) = 0:
+      valid format: decimal
+      name: Ensure ListPrice is decimal.
+
+ # ii. 4 different Numeric Metrics
+- duplicate_count(ProductID) = 0:
+      name: No duplicate ProductID.
+- max(StandardCost):
+      warn: when > 2000
+      fail: when > 3000 
+      name: Warn when StandardCost is more than 2000 and fail when greater than 3000.
+
+checks for SalesOrderDetail:
+- avg(LineTotal):
+      warn: when < 2000
+      fail: when < 1500
+      name: Warn when average order profit is less than 2000 and fail when less than 1500.
+- min_length(ProductID) = 3:
+      name: Ensure ProductID has correct values.
+
+# # iii. 1 Reference Check
+- values in (ProductID) must exist in Product (ProductID):
+      name: Check product data references the same key in Produc table
+      samples limit: 20
+
+# # v. 1 Distribution Check
+# This feature is not yet available for SQL Server, which was the system used for our data.
+
+# # vi. 1 User-defined Check
+- avg_retail_span between 900 and 1000:
+      name: Average difference between unit price and total earnings should be between 900 and 1000.
+      avg_retail_span expression: AVG(LineTotal - UnitPrice)
+        
+# # vii. 1 Failed Rows Check
+- failed rows:
+      name: Failed rows with more than 10 products ordered but without a discount.
+      fail condition: OrderQty > 10 and UnitPriceDiscount = 0
+
+## viii. 1 Soda Suggest operation against one dataset. Choose at least 3 of the suggested checks.
+# This feature is not yet available for SQL Server, which was the system used for our data.
+
+
+# d. The template functionality is not yet available for SQL Server. We comment the check below in order for checks to work.
+#- $template_rowcount:
+#      parameters:
+#            table: SalesOrderDetail
+#      fail: when < 600
