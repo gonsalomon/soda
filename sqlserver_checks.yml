@@ -1,4 +1,4 @@
-# SODA checks, in case it isn't obvious tho
+# SODA checks, in case it isn't obvious
 # i. 4 different Validity Metrics
 checks for Customer:
 - invalid_count(Phone) = 0:
