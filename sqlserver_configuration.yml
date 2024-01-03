@@ -1,0 +1,18 @@
+data_source adventureworks:
+  type: sqlserver
+  host: tcp:sqlserver-sodaagent1.database.windows.net
+  port: '1433'
+  username: sqlserver
+  password: secret123.
+  database: AdventureWorks
+  schema: SalesLT
+  trusted_connection: false
+  encrypt: false
+  trust_server_certificate: false
+  driver: ODBC Driver 18 for SQL Server
+
+# Soda cloud connection
+soda_cloud:
+  host: cloud.us.soda.io
+  api_key_id: 93ac3d5c-24b3-46d5-9f4d-92a02af04d96
+  api_key_secret: RZvf96WIui4vopyFm8NMcww1wAarMi8AH7wuWzHniJFHjIV7Ik4Onw
