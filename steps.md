@@ -76,12 +76,13 @@
 ## ES 10.3. elegir una integración para notificación
 ## EN 10.3. choose an integration to notify
 
-<PROGRESS>
-
 # ES 11. orquestar 
 # EN 11. orchestrate
 ## 11.1. con Airflow/DBT
+    si no carga, acordate de copiar la ruta de /airflow y hacer
+    export AIRFLOW_HOME=*tu ruta*
 ## 11.2. con GitHub Actions
+    hicimos otra rama (test) para poder correr el pull request
 
 # ES 12. crear un reporte
 # EN 12. create a report
@@ -91,6 +92,6 @@
 ## ES 12.2 usar una herramienta BI
 ## EN 12.2 use a BI tool
     con PowerBI, armar un reporte para datasets, dimensiones y checkeos
-
+ñ
 # ES 13. contactar a quien corresponda
 # EN 13. get in touch with whoever's relevant

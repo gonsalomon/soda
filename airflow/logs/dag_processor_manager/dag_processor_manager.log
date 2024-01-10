@@ -1386,3 +1386,57 @@ File Path                                                              PID    Ru
 /home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.10s           2024-01-02T15:15:39
 ================================================================================
 [2024-01-02T12:16:09.827-0300] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-10T16:24:42.235-0300] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2024-01-10T16:24:42.240-0300] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-01-10T16:24:42.241-0300] {manager.py:471} INFO - Checking for new files in /home/user/projects/newproj/soda/airflow/dags every 300 seconds
+[2024-01-10T16:24:42.241-0300] {manager.py:738} INFO - Searching for files in /home/user/projects/newproj/soda/airflow/dags
+[2024-01-10T16:24:42.246-0300] {manager.py:741} INFO - There are 1 files in /home/user/projects/newproj/soda/airflow/dags
+[2024-01-10T16:24:42.601-0300] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.21s           2024-01-10T19:24:42
+================================================================================
+[2024-01-10T16:25:13.122-0300] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.21s           2024-01-10T19:25:13
+================================================================================
+[2024-01-10T16:25:43.625-0300] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.21s           2024-01-10T19:25:43
+================================================================================
+[2024-01-10T16:26:14.134-0300] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.21s           2024-01-10T19:26:14
+================================================================================
+[2024-01-10T16:26:44.529-0300] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.10s           2024-01-10T19:26:44
+================================================================================
+[2024-01-10T16:27:14.921-0300] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/user/projects/newproj/soda/airflow/dags/model_sales_category.py                           1           0  0.10s           2024-01-10T19:27:14
+================================================================================
+[2024-01-10T16:27:45.645-0300] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
