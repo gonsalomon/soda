@@ -91,6 +91,7 @@
 ## ES 12.2 usar una herramienta BI
 ## EN 12.2 use a BI tool
     con PowerBI, armar un reporte para datasets, dimensiones y checkeos
+    URL: https://app.powerbi.com/groups/me/reports/5cdd0924-f30c-4b0a-9b5e-3b590e310721/ReportSection?experience=power-bi
 
 # ES 13. contactar a quien corresponda
 # EN 13. get in touch with whoever's relevant
