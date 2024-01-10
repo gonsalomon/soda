@@ -76,8 +76,6 @@
 ## ES 10.3. elegir una integración para notificación
 ## EN 10.3. choose an integration to notify
 
-<PROGRESS>
-
 # ES 11. orquestar 
 # EN 11. orchestrate
 ## 11.1. con Airflow/DBT
