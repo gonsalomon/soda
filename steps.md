@@ -79,7 +79,10 @@
 # ES 11. orquestar 
 # EN 11. orchestrate
 ## 11.1. con Airflow/DBT
+    si no carga, acordate de copiar la ruta de /airflow y hacer
+    export AIRFLOW_HOME=*tu ruta*
 ## 11.2. con GitHub Actions
+    hicimos otra rama (test) para poder correr el pull request
 
 # ES 12. crear un reporte
 # EN 12. create a report
