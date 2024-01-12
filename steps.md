@@ -1,5 +1,8 @@
+--pasos preliminares--
+
 # ES 0. crear (y pullear) repo para tener todo lo de soda en algún lugar
 # EN 0. create (and pull) a repo to have somewhere to save all soda stuff
+# 0.1 instalar WSL en VSCode (en extensiones)
 
 # ES 1. activar entorno virtual (.venv)
 # EN 1. activate virtual environment (.venv)
@@ -13,6 +16,9 @@
 # ES 3. levantar la imagen en Docker de la DB on-prem con
 # EN 3. deploy Docker image for an on-prem DB with
     docker run --name sip-of-soda -p 5432:5432 -e POSTGRES_PASSWORD=secret sodadata/soda-adventureworks
+    (importante para tener la base de datos andando)
+
+--desde acá empiezan los pasos de SODA--
 
 # ES 4. crear un archivo de configuración
 # EN 4. create a configuration file
@@ -58,7 +64,7 @@
     (usamos Slack)
 ## ES 8.2. configurar un atributo para los checks
 ## EN 8.2. configure an attribute for checks 
-    dimensión con accuracy (acierto), completeness (completitud), consistency (consistencia), timeliness (temporalidad), validity (validez), y uniqueness (unicidad)
+    dimensión con accuracy (precisión), completeness (completitud), consistency (consistencia), timeliness (temporalidad), validity (validez), y uniqueness (unicidad)
 ## ES 8.3. configurar un atributo para los datasets
 ## EN 8.3. configure an attribute for datasets
     dimensión multivariable con los distintos datasets
