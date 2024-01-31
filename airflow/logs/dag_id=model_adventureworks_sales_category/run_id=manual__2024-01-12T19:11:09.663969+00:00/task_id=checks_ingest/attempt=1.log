@@ -1,0 +1,264 @@
+[2024-01-12T16:12:50.197-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.checks_ingest manual__2024-01-12T19:11:09.663969+00:00 [queued]>
+[2024-01-12T16:12:50.214-0300] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: model_adventureworks_sales_category.checks_ingest manual__2024-01-12T19:11:09.663969+00:00 [queued]>
+[2024-01-12T16:12:50.215-0300] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-01-12T16:12:50.242-0300] {taskinstance.py:2192} INFO - Executing <Task(PythonVirtualenvOperator): checks_ingest> on 2024-01-12 19:11:09.663969+00:00
+[2024-01-12T16:12:50.244-0300] {standard_task_runner.py:60} INFO - Started process 31387 to run task
+[2024-01-12T16:12:50.248-0300] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'model_adventureworks_sales_category', 'checks_ingest', 'manual__2024-01-12T19:11:09.663969+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/model_sales_category.py', '--cfg-path', '/tmp/tmp_dbl7cuh']
+[2024-01-12T16:12:50.253-0300] {standard_task_runner.py:88} INFO - Job 31: Subtask checks_ingest
+[2024-01-12T16:12:50.297-0300] {task_command.py:423} INFO - Running <TaskInstance: model_adventureworks_sales_category.checks_ingest manual__2024-01-12T19:11:09.663969+00:00 [running]> on host LAPTOP-MELTBPNS.
+[2024-01-12T16:12:50.378-0300] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='soda_core' AIRFLOW_CTX_DAG_ID='model_adventureworks_sales_category' AIRFLOW_CTX_TASK_ID='checks_ingest' AIRFLOW_CTX_EXECUTION_DATE='2024-01-12T19:11:09.663969+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-12T19:11:09.663969+00:00'
+[2024-01-12T16:12:50.379-0300] {process_utils.py:182} INFO - Executing cmd: /home/user/projects/newproj/soda/.venv/bin/python -m virtualenv /tmp/venv_2vvsbx0 --python=python
+[2024-01-12T16:12:50.380-0300] {process_utils.py:186} INFO - Output:
+[2024-01-12T16:12:50.743-0300] {process_utils.py:190} INFO - created virtual environment CPython3.10.12.final.0-64 in 231ms
+[2024-01-12T16:12:50.744-0300] {process_utils.py:190} INFO -   creator CPython3Posix(dest=/tmp/venv_2vvsbx0, clear=False, no_vcs_ignore=False, global=False)
+[2024-01-12T16:12:50.744-0300] {process_utils.py:190} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/user/.local/share/virtualenv)
+[2024-01-12T16:12:50.744-0300] {process_utils.py:190} INFO -     added seed packages: pip==23.3.2, setuptools==69.0.3, wheel==0.42.0
+[2024-01-12T16:12:50.744-0300] {process_utils.py:190} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2024-01-12T16:12:50.765-0300] {process_utils.py:182} INFO - Executing cmd: /tmp/venv_2vvsbx0/bin/pip install -r /tmp/venv_2vvsbx0/requirements.txt
+[2024-01-12T16:12:50.765-0300] {process_utils.py:186} INFO - Output:
+[2024-01-12T16:12:52.260-0300] {process_utils.py:190} INFO - Looking in indexes: https://pypi.cloud.soda.io
+[2024-01-12T16:12:53.677-0300] {process_utils.py:190} INFO - Collecting soda-postgres (from -r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:53.927-0300] {process_utils.py:190} INFO -   Downloading https://pypi.cloud.soda.io/packages/soda_postgres-1.2.0-py3-none-any.whl (5.2 kB)
+[2024-01-12T16:12:54.445-0300] {process_utils.py:190} INFO - Collecting soda-scientific (from -r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:12:54.694-0300] {process_utils.py:190} INFO -   Downloading https://pypi.cloud.soda.io/packages/soda_scientific-1.2.0-py3-none-any.whl (21 kB)
+[2024-01-12T16:12:55.224-0300] {process_utils.py:190} INFO - Collecting soda==1.2.0 (from soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:55.477-0300] {process_utils.py:190} INFO -   Downloading https://pypi.cloud.soda.io/packages/soda-1.2.0-py3-none-any.whl (253 kB)
+[2024-01-12T16:12:55.977-0300] {process_utils.py:190} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.1/253.1 kB 489.0 kB/s eta 0:00:00
+[2024-01-12T16:12:56.793-0300] {process_utils.py:190} INFO - Collecting psycopg2-binary<3.0,>=2.8.5 (from soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:56.795-0300] {process_utils.py:190} INFO -   Using cached psycopg2_binary-2.9.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)
+[2024-01-12T16:12:57.413-0300] {process_utils.py:190} INFO - Collecting markupsafe<=2.1.2,>=2.0.1 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:57.418-0300] {process_utils.py:190} INFO -   Using cached MarkupSafe-2.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+[2024-01-12T16:12:58.006-0300] {process_utils.py:190} INFO - Collecting Jinja2<4.0,>=2.11 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:58.008-0300] {process_utils.py:190} INFO -   Using cached Jinja2-3.1.3-py3-none-any.whl.metadata (3.3 kB)
+[2024-01-12T16:12:58.658-0300] {process_utils.py:190} INFO - Collecting click~=8.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:58.660-0300] {process_utils.py:190} INFO -   Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+[2024-01-12T16:12:59.508-0300] {process_utils.py:190} INFO - Collecting ruamel.yaml<0.18.0,>=0.17.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:12:59.510-0300] {process_utils.py:190} INFO -   Using cached ruamel.yaml-0.17.40-py3-none-any.whl.metadata (19 kB)
+[2024-01-12T16:13:00.076-0300] {process_utils.py:190} INFO - Collecting requests~=2.28 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:00.078-0300] {process_utils.py:190} INFO -   Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+[2024-01-12T16:13:00.627-0300] {process_utils.py:190} INFO - Collecting antlr4-python3-runtime~=4.11.1 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:00.630-0300] {process_utils.py:190} INFO -   Using cached antlr4_python3_runtime-4.11.1-py3-none-any.whl (144 kB)
+[2024-01-12T16:13:01.196-0300] {process_utils.py:190} INFO - Collecting opentelemetry-api~=1.16.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:01.197-0300] {process_utils.py:190} INFO -   Using cached opentelemetry_api-1.16.0-py3-none-any.whl (57 kB)
+[2024-01-12T16:13:01.756-0300] {process_utils.py:190} INFO - Collecting opentelemetry-exporter-otlp-proto-http~=1.16.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:01.758-0300] {process_utils.py:190} INFO -   Using cached opentelemetry_exporter_otlp_proto_http-1.16.0-py3-none-any.whl (21 kB)
+[2024-01-12T16:13:02.307-0300] {process_utils.py:190} INFO - Collecting sqlparse~=0.4 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:02.309-0300] {process_utils.py:190} INFO -   Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+[2024-01-12T16:13:02.897-0300] {process_utils.py:190} INFO - Collecting inflect~=7.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:02.898-0300] {process_utils.py:190} INFO -   Using cached inflect-7.0.0-py3-none-any.whl.metadata (21 kB)
+[2024-01-12T16:13:03.406-0300] {process_utils.py:190} INFO - Collecting soda-freshness<1.0.0,>=0.0.5 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:03.654-0300] {process_utils.py:190} INFO -   Downloading https://pypi.cloud.soda.io/packages/soda_freshness-0.0.5-py3-none-any.whl (4.3 kB)
+[2024-01-12T16:13:04.161-0300] {process_utils.py:190} INFO - Collecting ia-questionary (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:04.412-0300] {process_utils.py:190} INFO -   Downloading https://pypi.cloud.soda.io/packages/ia_questionary-1.10.0-py3-none-any.whl (35 kB)
+[2024-01-12T16:13:05.029-0300] {process_utils.py:190} INFO - Collecting rich<14.0.0,>=13.3.3 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:05.031-0300] {process_utils.py:190} INFO -   Using cached rich-13.7.0-py3-none-any.whl.metadata (18 kB)
+[2024-01-12T16:13:05.599-0300] {process_utils.py:190} INFO - Collecting typer<1.0.0,>=0.7.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:05.604-0300] {process_utils.py:190} INFO -   Using cached typer-0.9.0-py3-none-any.whl (45 kB)
+[2024-01-12T16:13:06.314-0300] {process_utils.py:190} INFO - Collecting pydantic<3.0.0,>=2.0.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:06.319-0300] {process_utils.py:190} INFO -   Using cached pydantic-2.5.3-py3-none-any.whl.metadata (65 kB)
+[2024-01-12T16:13:06.885-0300] {process_utils.py:190} INFO - Collecting pyyaml<7.0.0,>=5.4.1 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:06.888-0300] {process_utils.py:190} INFO -   Using cached PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+[2024-01-12T16:13:07.429-0300] {process_utils.py:190} INFO - Collecting segment-analytics-python<3.0.0 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:07.433-0300] {process_utils.py:190} INFO -   Using cached segment_analytics_python-2.2.3-py2.py3-none-any.whl.metadata (1.6 kB)
+[2024-01-12T16:13:08.140-0300] {process_utils.py:190} INFO - Collecting pandas<2.0.0,>=1.3.5 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:08.141-0300] {process_utils.py:190} INFO -   Using cached pandas-1.5.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+[2024-01-12T16:13:08.755-0300] {process_utils.py:190} INFO - Collecting deepdiff~=6.3 (from soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:08.757-0300] {process_utils.py:190} INFO -   Using cached deepdiff-6.7.1-py3-none-any.whl.metadata (6.1 kB)
+[2024-01-12T16:13:08.766-0300] {process_utils.py:190} INFO - Requirement already satisfied: wheel in /tmp/venv_2vvsbx0/lib/python3.10/site-packages (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3)) (0.42.0)
+[2024-01-12T16:13:09.404-0300] {process_utils.py:190} INFO - Collecting scipy>=1.8.0 (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:09.405-0300] {process_utils.py:190} INFO -   Using cached scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+[2024-01-12T16:13:10.123-0300] {process_utils.py:190} INFO - Collecting numpy<2.0.0,>=1.23.3 (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:10.124-0300] {process_utils.py:190} INFO -   Using cached numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+[2024-01-12T16:13:10.668-0300] {process_utils.py:190} INFO - Collecting inflection==0.5.1 (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:10.671-0300] {process_utils.py:190} INFO -   Using cached inflection-0.5.1-py2.py3-none-any.whl (9.5 kB)
+[2024-01-12T16:13:11.238-0300] {process_utils.py:190} INFO - Collecting httpx<2.0.0,>=0.18.1 (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:11.239-0300] {process_utils.py:190} INFO -   Using cached httpx-0.26.0-py3-none-any.whl.metadata (7.6 kB)
+[2024-01-12T16:13:12.095-0300] {process_utils.py:190} INFO - Collecting cython>=0.22 (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:12.096-0300] {process_utils.py:190} INFO -   Using cached Cython-3.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.2 kB)
+[2024-01-12T16:13:12.654-0300] {process_utils.py:190} INFO - Collecting prophet<2.0.0,>=1.1.0 (from soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:12.657-0300] {process_utils.py:190} INFO -   Using cached prophet-1.1.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.5 kB)
+[2024-01-12T16:13:13.234-0300] {process_utils.py:190} INFO - Collecting anyio (from httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:13.237-0300] {process_utils.py:190} INFO -   Using cached anyio-4.2.0-py3-none-any.whl.metadata (4.6 kB)
+[2024-01-12T16:13:13.790-0300] {process_utils.py:190} INFO - Collecting certifi (from httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:13.792-0300] {process_utils.py:190} INFO -   Using cached certifi-2023.11.17-py3-none-any.whl.metadata (2.2 kB)
+[2024-01-12T16:13:14.360-0300] {process_utils.py:190} INFO - Collecting httpcore==1.* (from httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:14.362-0300] {process_utils.py:190} INFO -   Using cached httpcore-1.0.2-py3-none-any.whl.metadata (20 kB)
+[2024-01-12T16:13:14.909-0300] {process_utils.py:190} INFO - Collecting idna (from httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:14.911-0300] {process_utils.py:190} INFO -   Using cached idna-3.6-py3-none-any.whl.metadata (9.9 kB)
+[2024-01-12T16:13:15.445-0300] {process_utils.py:190} INFO - Collecting sniffio (from httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:15.448-0300] {process_utils.py:190} INFO -   Using cached sniffio-1.3.0-py3-none-any.whl (10 kB)
+[2024-01-12T16:13:16.021-0300] {process_utils.py:190} INFO - Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:16.023-0300] {process_utils.py:190} INFO -   Using cached h11-0.14.0-py3-none-any.whl (58 kB)
+[2024-01-12T16:13:16.587-0300] {process_utils.py:190} INFO - Collecting python-dateutil>=2.8.1 (from pandas<2.0.0,>=1.3.5->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:16.588-0300] {process_utils.py:190} INFO -   Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+[2024-01-12T16:13:17.186-0300] {process_utils.py:190} INFO - Collecting pytz>=2020.1 (from pandas<2.0.0,>=1.3.5->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:17.187-0300] {process_utils.py:190} INFO -   Using cached pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+[2024-01-12T16:13:17.765-0300] {process_utils.py:190} INFO - Collecting cmdstanpy>=1.0.4 (from prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:17.770-0300] {process_utils.py:190} INFO -   Using cached cmdstanpy-1.2.0-py3-none-any.whl.metadata (3.9 kB)
+[2024-01-12T16:13:18.552-0300] {process_utils.py:190} INFO - Collecting matplotlib>=2.0.0 (from prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:18.555-0300] {process_utils.py:190} INFO -   Using cached matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+[2024-01-12T16:13:19.149-0300] {process_utils.py:190} INFO - Collecting holidays>=0.25 (from prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:19.157-0300] {process_utils.py:190} INFO -   Using cached holidays-0.40-py3-none-any.whl.metadata (21 kB)
+[2024-01-12T16:13:19.778-0300] {process_utils.py:190} INFO - Collecting tqdm>=4.36.1 (from prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:19.779-0300] {process_utils.py:190} INFO -   Using cached tqdm-4.66.1-py3-none-any.whl.metadata (57 kB)
+[2024-01-12T16:13:20.352-0300] {process_utils.py:190} INFO - Collecting importlib-resources (from prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:20.354-0300] {process_utils.py:190} INFO -   Using cached importlib_resources-6.1.1-py3-none-any.whl.metadata (4.1 kB)
+[2024-01-12T16:13:20.911-0300] {process_utils.py:190} INFO - Collecting annotated-types>=0.4.0 (from pydantic<3.0.0,>=2.0.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:20.913-0300] {process_utils.py:190} INFO -   Using cached annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+[2024-01-12T16:13:22.208-0300] {process_utils.py:190} INFO - Collecting pydantic-core==2.14.6 (from pydantic<3.0.0,>=2.0.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:22.210-0300] {process_utils.py:190} INFO -   Using cached pydantic_core-2.14.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+[2024-01-12T16:13:22.788-0300] {process_utils.py:190} INFO - Collecting typing-extensions>=4.6.1 (from pydantic<3.0.0,>=2.0.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:22.790-0300] {process_utils.py:190} INFO -   Using cached typing_extensions-4.9.0-py3-none-any.whl.metadata (3.0 kB)
+[2024-01-12T16:13:23.465-0300] {process_utils.py:190} INFO - Collecting stanio~=0.3.0 (from cmdstanpy>=1.0.4->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:23.468-0300] {process_utils.py:190} INFO -   Using cached stanio-0.3.0-py3-none-any.whl.metadata (963 bytes)
+[2024-01-12T16:13:24.046-0300] {process_utils.py:190} INFO - Collecting ordered-set<4.2.0,>=4.0.2 (from deepdiff~=6.3->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:24.049-0300] {process_utils.py:190} INFO -   Using cached ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+[2024-01-12T16:13:24.976-0300] {process_utils.py:190} INFO - Collecting contourpy>=1.0.1 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:24.990-0300] {process_utils.py:190} INFO -   Using cached contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+[2024-01-12T16:13:25.547-0300] {process_utils.py:190} INFO - Collecting cycler>=0.10 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:25.551-0300] {process_utils.py:190} INFO -   Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+[2024-01-12T16:13:26.266-0300] {process_utils.py:190} INFO - Collecting fonttools>=4.22.0 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:26.269-0300] {process_utils.py:190} INFO -   Using cached fonttools-4.47.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (157 kB)
+[2024-01-12T16:13:26.845-0300] {process_utils.py:190} INFO - Collecting kiwisolver>=1.3.1 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:26.847-0300] {process_utils.py:190} INFO -   Using cached kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (6.4 kB)
+[2024-01-12T16:13:27.398-0300] {process_utils.py:190} INFO - Collecting packaging>=20.0 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:27.402-0300] {process_utils.py:190} INFO -   Using cached packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+[2024-01-12T16:13:28.126-0300] {process_utils.py:190} INFO - Collecting pillow>=8 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:28.128-0300] {process_utils.py:190} INFO -   Using cached pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+[2024-01-12T16:13:28.702-0300] {process_utils.py:190} INFO - Collecting pyparsing>=2.3.1 (from matplotlib>=2.0.0->prophet<2.0.0,>=1.1.0->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:28.705-0300] {process_utils.py:190} INFO -   Using cached pyparsing-3.1.1-py3-none-any.whl.metadata (5.1 kB)
+[2024-01-12T16:13:29.305-0300] {process_utils.py:190} INFO - Collecting deprecated>=1.2.6 (from opentelemetry-api~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:29.308-0300] {process_utils.py:190} INFO -   Using cached Deprecated-1.2.14-py2.py3-none-any.whl.metadata (5.4 kB)
+[2024-01-12T16:13:29.314-0300] {process_utils.py:190} INFO - Requirement already satisfied: setuptools>=16.0 in /tmp/venv_2vvsbx0/lib/python3.10/site-packages (from opentelemetry-api~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2)) (69.0.3)
+[2024-01-12T16:13:29.915-0300] {process_utils.py:190} INFO - Collecting backoff<3.0.0,>=1.10.0 (from opentelemetry-exporter-otlp-proto-http~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:29.927-0300] {process_utils.py:190} INFO -   Using cached backoff-2.2.1-py3-none-any.whl (15 kB)
+[2024-01-12T16:13:30.534-0300] {process_utils.py:190} INFO - Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:30.537-0300] {process_utils.py:190} INFO -   Using cached googleapis_common_protos-1.62.0-py2.py3-none-any.whl.metadata (1.5 kB)
+[2024-01-12T16:13:31.096-0300] {process_utils.py:190} INFO - Collecting opentelemetry-proto==1.16.0 (from opentelemetry-exporter-otlp-proto-http~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:31.097-0300] {process_utils.py:190} INFO -   Using cached opentelemetry_proto-1.16.0-py3-none-any.whl (52 kB)
+[2024-01-12T16:13:31.653-0300] {process_utils.py:190} INFO - Collecting opentelemetry-sdk~=1.16.0 (from opentelemetry-exporter-otlp-proto-http~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:31.656-0300] {process_utils.py:190} INFO -   Using cached opentelemetry_sdk-1.16.0-py3-none-any.whl (94 kB)
+[2024-01-12T16:13:32.378-0300] {process_utils.py:190} INFO - Collecting protobuf<5.0,>=3.19 (from opentelemetry-proto==1.16.0->opentelemetry-exporter-otlp-proto-http~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:32.379-0300] {process_utils.py:190} INFO -   Using cached protobuf-4.25.2-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+[2024-01-12T16:13:32.932-0300] {process_utils.py:190} INFO - Collecting six>=1.5 (from python-dateutil>=2.8.1->pandas<2.0.0,>=1.3.5->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:32.935-0300] {process_utils.py:190} INFO -   Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+[2024-01-12T16:13:33.631-0300] {process_utils.py:190} INFO - Collecting charset-normalizer<4,>=2 (from requests~=2.28->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:33.636-0300] {process_utils.py:190} INFO -   Using cached charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
+[2024-01-12T16:13:34.234-0300] {process_utils.py:190} INFO - Collecting urllib3<3,>=1.21.1 (from requests~=2.28->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:34.237-0300] {process_utils.py:190} INFO -   Using cached urllib3-2.1.0-py3-none-any.whl.metadata (6.4 kB)
+[2024-01-12T16:13:35.003-0300] {process_utils.py:190} INFO - Collecting markdown-it-py>=2.2.0 (from rich<14.0.0,>=13.3.3->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:35.006-0300] {process_utils.py:190} INFO -   Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+[2024-01-12T16:13:35.564-0300] {process_utils.py:190} INFO - Collecting pygments<3.0.0,>=2.13.0 (from rich<14.0.0,>=13.3.3->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:35.566-0300] {process_utils.py:190} INFO -   Using cached pygments-2.17.2-py3-none-any.whl.metadata (2.6 kB)
+[2024-01-12T16:13:36.155-0300] {process_utils.py:190} INFO - Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml<0.18.0,>=0.17.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:36.159-0300] {process_utils.py:190} INFO -   Using cached ruamel.yaml.clib-0.2.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (2.2 kB)
+[2024-01-12T16:13:36.761-0300] {process_utils.py:190} INFO - Collecting monotonic~=1.5 (from segment-analytics-python<3.0.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:36.765-0300] {process_utils.py:190} INFO -   Using cached monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+[2024-01-12T16:13:37.523-0300] {process_utils.py:190} INFO - Collecting exceptiongroup>=1.0.2 (from anyio->httpx<2.0.0,>=0.18.1->soda-scientific->-r /tmp/venv_2vvsbx0/requirements.txt (line 3))
+[2024-01-12T16:13:37.525-0300] {process_utils.py:190} INFO -   Using cached exceptiongroup-1.2.0-py3-none-any.whl.metadata (6.6 kB)
+[2024-01-12T16:13:38.134-0300] {process_utils.py:190} INFO - Collecting prompt_toolkit<=3.0.36,>=2.0 (from ia-questionary->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:38.136-0300] {process_utils.py:190} INFO -   Using cached prompt_toolkit-3.0.36-py3-none-any.whl (386 kB)
+[2024-01-12T16:13:38.907-0300] {process_utils.py:190} INFO - Collecting wrapt<2,>=1.10 (from deprecated>=1.2.6->opentelemetry-api~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:38.909-0300] {process_utils.py:190} INFO -   Using cached wrapt-1.16.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+[2024-01-12T16:13:39.673-0300] {process_utils.py:190} INFO - Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<14.0.0,>=13.3.3->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:39.675-0300] {process_utils.py:190} INFO -   Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+[2024-01-12T16:13:40.250-0300] {process_utils.py:190} INFO - Collecting opentelemetry-semantic-conventions==0.37b0 (from opentelemetry-sdk~=1.16.0->opentelemetry-exporter-otlp-proto-http~=1.16.0->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:40.252-0300] {process_utils.py:190} INFO -   Using cached opentelemetry_semantic_conventions-0.37b0-py3-none-any.whl (26 kB)
+[2024-01-12T16:13:40.889-0300] {process_utils.py:190} INFO - Collecting wcwidth (from prompt_toolkit<=3.0.36,>=2.0->ia-questionary->soda==1.2.0->soda-postgres->-r /tmp/venv_2vvsbx0/requirements.txt (line 2))
+[2024-01-12T16:13:40.892-0300] {process_utils.py:190} INFO -   Using cached wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+[2024-01-12T16:13:41.128-0300] {process_utils.py:190} INFO - Using cached Cython-3.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+[2024-01-12T16:13:41.146-0300] {process_utils.py:190} INFO - Using cached httpx-0.26.0-py3-none-any.whl (75 kB)
+[2024-01-12T16:13:41.148-0300] {process_utils.py:190} INFO - Using cached httpcore-1.0.2-py3-none-any.whl (76 kB)
+[2024-01-12T16:13:41.152-0300] {process_utils.py:190} INFO - Using cached numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+[2024-01-12T16:13:41.203-0300] {process_utils.py:190} INFO - Using cached prophet-1.1.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.4 MB)
+[2024-01-12T16:13:41.253-0300] {process_utils.py:190} INFO - Using cached psycopg2_binary-2.9.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+[2024-01-12T16:13:41.260-0300] {process_utils.py:190} INFO - Using cached pydantic-2.5.3-py3-none-any.whl (381 kB)
+[2024-01-12T16:13:41.262-0300] {process_utils.py:190} INFO - Using cached pydantic_core-2.14.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+[2024-01-12T16:13:41.269-0300] {process_utils.py:190} INFO - Using cached PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (705 kB)
+[2024-01-12T16:13:41.273-0300] {process_utils.py:190} INFO - Using cached scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.4 MB)
+[2024-01-12T16:13:41.346-0300] {process_utils.py:190} INFO - Using cached annotated_types-0.6.0-py3-none-any.whl (12 kB)
+[2024-01-12T16:13:41.348-0300] {process_utils.py:190} INFO - Using cached click-8.1.7-py3-none-any.whl (97 kB)
+[2024-01-12T16:13:41.351-0300] {process_utils.py:190} INFO - Using cached cmdstanpy-1.2.0-py3-none-any.whl (93 kB)
+[2024-01-12T16:13:41.353-0300] {process_utils.py:190} INFO - Using cached deepdiff-6.7.1-py3-none-any.whl (76 kB)
+[2024-01-12T16:13:41.354-0300] {process_utils.py:190} INFO - Using cached holidays-0.40-py3-none-any.whl (889 kB)
+[2024-01-12T16:13:41.356-0300] {process_utils.py:190} INFO - Using cached inflect-7.0.0-py3-none-any.whl (34 kB)
+[2024-01-12T16:13:41.358-0300] {process_utils.py:190} INFO - Using cached Jinja2-3.1.3-py3-none-any.whl (133 kB)
+[2024-01-12T16:13:41.360-0300] {process_utils.py:190} INFO - Using cached matplotlib-3.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+[2024-01-12T16:13:41.382-0300] {process_utils.py:190} INFO - Using cached pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+[2024-01-12T16:13:41.385-0300] {process_utils.py:190} INFO - Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+[2024-01-12T16:13:41.386-0300] {process_utils.py:190} INFO - Using cached certifi-2023.11.17-py3-none-any.whl (162 kB)
+[2024-01-12T16:13:41.387-0300] {process_utils.py:190} INFO - Using cached idna-3.6-py3-none-any.whl (61 kB)
+[2024-01-12T16:13:41.388-0300] {process_utils.py:190} INFO - Using cached rich-13.7.0-py3-none-any.whl (240 kB)
+[2024-01-12T16:13:41.391-0300] {process_utils.py:190} INFO - Using cached ruamel.yaml-0.17.40-py3-none-any.whl (113 kB)
+[2024-01-12T16:13:41.392-0300] {process_utils.py:190} INFO - Using cached segment_analytics_python-2.2.3-py2.py3-none-any.whl (24 kB)
+[2024-01-12T16:13:41.395-0300] {process_utils.py:190} INFO - Using cached tqdm-4.66.1-py3-none-any.whl (78 kB)
+[2024-01-12T16:13:41.396-0300] {process_utils.py:190} INFO - Using cached typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+[2024-01-12T16:13:41.398-0300] {process_utils.py:190} INFO - Using cached anyio-4.2.0-py3-none-any.whl (85 kB)
+[2024-01-12T16:13:41.399-0300] {process_utils.py:190} INFO - Using cached importlib_resources-6.1.1-py3-none-any.whl (33 kB)
+[2024-01-12T16:13:41.402-0300] {process_utils.py:190} INFO - Using cached charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (142 kB)
+[2024-01-12T16:13:41.404-0300] {process_utils.py:190} INFO - Using cached contourpy-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (310 kB)
+[2024-01-12T16:13:41.406-0300] {process_utils.py:190} INFO - Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+[2024-01-12T16:13:41.407-0300] {process_utils.py:190} INFO - Using cached Deprecated-1.2.14-py2.py3-none-any.whl (9.6 kB)
+[2024-01-12T16:13:41.408-0300] {process_utils.py:190} INFO - Using cached exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+[2024-01-12T16:13:41.410-0300] {process_utils.py:190} INFO - Using cached fonttools-4.47.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+[2024-01-12T16:13:41.424-0300] {process_utils.py:190} INFO - Using cached googleapis_common_protos-1.62.0-py2.py3-none-any.whl (228 kB)
+[2024-01-12T16:13:41.427-0300] {process_utils.py:190} INFO - Using cached kiwisolver-1.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+[2024-01-12T16:13:41.435-0300] {process_utils.py:190} INFO - Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+[2024-01-12T16:13:41.437-0300] {process_utils.py:190} INFO - Using cached packaging-23.2-py3-none-any.whl (53 kB)
+[2024-01-12T16:13:41.438-0300] {process_utils.py:190} INFO - Using cached pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl (4.5 MB)
+[2024-01-12T16:13:41.446-0300] {process_utils.py:190} INFO - Using cached pygments-2.17.2-py3-none-any.whl (1.2 MB)
+[2024-01-12T16:13:41.450-0300] {process_utils.py:190} INFO - Using cached pyparsing-3.1.1-py3-none-any.whl (103 kB)
+[2024-01-12T16:13:41.452-0300] {process_utils.py:190} INFO - Using cached ruamel.yaml.clib-0.2.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (526 kB)
+[2024-01-12T16:13:41.454-0300] {process_utils.py:190} INFO - Using cached stanio-0.3.0-py3-none-any.whl (6.2 kB)
+[2024-01-12T16:13:41.455-0300] {process_utils.py:190} INFO - Using cached urllib3-2.1.0-py3-none-any.whl (104 kB)
+[2024-01-12T16:13:41.457-0300] {process_utils.py:190} INFO - Using cached protobuf-4.25.2-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+[2024-01-12T16:13:41.460-0300] {process_utils.py:190} INFO - Using cached wrapt-1.16.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (80 kB)
+[2024-01-12T16:13:41.462-0300] {process_utils.py:190} INFO - Using cached wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+[2024-01-12T16:13:42.058-0300] {process_utils.py:190} INFO - Installing collected packages: wcwidth, pytz, monotonic, antlr4-python3-runtime, wrapt, urllib3, typing-extensions, tqdm, sqlparse, sniffio, six, ruamel.yaml.clib, pyyaml, pyparsing, pygments, psycopg2-binary, protobuf, prompt_toolkit, pillow, packaging, ordered-set, opentelemetry-semantic-conventions, numpy, mdurl, markupsafe, kiwisolver, inflection, importlib-resources, idna, h11, fonttools, exceptiongroup, cython, cycler, click, charset-normalizer, certifi, backoff, annotated-types, typer, stanio, scipy, ruamel.yaml, requests, python-dateutil, pydantic-core, opentelemetry-proto, markdown-it-py, Jinja2, ia-questionary, httpcore, googleapis-common-protos, deprecated, deepdiff, contourpy, anyio, segment-analytics-python, rich, pydantic, pandas, opentelemetry-api, matplotlib, httpx, holidays, soda-freshness, opentelemetry-sdk, inflect, cmdstanpy, prophet, opentelemetry-exporter-otlp-proto-http, soda, soda-scientific, soda-postgres
+[2024-01-12T16:14:01.212-0300] {process_utils.py:190} INFO - Successfully installed Jinja2-3.1.3 annotated-types-0.6.0 antlr4-python3-runtime-4.11.1 anyio-4.2.0 backoff-2.2.1 certifi-2023.11.17 charset-normalizer-3.3.2 click-8.1.7 cmdstanpy-1.2.0 contourpy-1.2.0 cycler-0.12.1 cython-3.0.8 deepdiff-6.7.1 deprecated-1.2.14 exceptiongroup-1.2.0 fonttools-4.47.2 googleapis-common-protos-1.62.0 h11-0.14.0 holidays-0.40 httpcore-1.0.2 httpx-0.26.0 ia-questionary-1.10.0 idna-3.6 importlib-resources-6.1.1 inflect-7.0.0 inflection-0.5.1 kiwisolver-1.4.5 markdown-it-py-3.0.0 markupsafe-2.1.2 matplotlib-3.8.2 mdurl-0.1.2 monotonic-1.6 numpy-1.26.3 opentelemetry-api-1.16.0 opentelemetry-exporter-otlp-proto-http-1.16.0 opentelemetry-proto-1.16.0 opentelemetry-sdk-1.16.0 opentelemetry-semantic-conventions-0.37b0 ordered-set-4.1.0 packaging-23.2 pandas-1.5.3 pillow-10.2.0 prompt_toolkit-3.0.36 prophet-1.1.5 protobuf-4.25.2 psycopg2-binary-2.9.9 pydantic-2.5.3 pydantic-core-2.14.6 pygments-2.17.2 pyparsing-3.1.1 python-dateutil-2.8.2 pytz-2023.3.post1 pyyaml-6.0.1 requests-2.31.0 rich-13.7.0 ruamel.yaml-0.17.40 ruamel.yaml.clib-0.2.8 scipy-1.11.4 segment-analytics-python-2.2.3 six-1.16.0 sniffio-1.3.0 soda-1.2.0 soda-freshness-0.0.5 soda-postgres-1.2.0 soda-scientific-1.2.0 sqlparse-0.4.4 stanio-0.3.0 tqdm-4.66.1 typer-0.9.0 typing-extensions-4.9.0 urllib3-2.1.0 wcwidth-0.2.13 wrapt-1.16.0
+[2024-01-12T16:14:02.246-0300] {process_utils.py:182} INFO - Executing cmd: /tmp/venv_2vvsbx0/bin/python /tmp/venv-callzurfy1_t/script.py /tmp/venv-callzurfy1_t/script.in /tmp/venv-callzurfy1_t/script.out /tmp/venv-callzurfy1_t/string_args.txt /tmp/venv-callzurfy1_t/termination.log
+[2024-01-12T16:14:02.246-0300] {process_utils.py:186} INFO - Output:
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - Running Soda Scan ...
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - INFO   | Soda Library 1.2.0
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - INFO   | Soda Core 3.0.47
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - DEBUG  | Reading configuration file "/home/user/projects/newproj/soda/soda/configuration.yml"
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - DEBUG  | Reading SodaCL file "/home/user/projects/newproj/soda/soda/checks/ingest/dim_product_category.yml"
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - DEBUG  | Scan execution starts
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - INFO   | By downloading and using Soda Library, you agree to Soda's Terms & Conditions (https://go.soda.io/t&c) and Privacy Policy (https://go.soda.io/privacy).
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - DEBUG  | Postgres connection properties: host="localhost", port="None", database="postgres", user="postgres", options="-c search_path=public", connection_timeout="None"
+[2024-01-12T16:14:07.597-0300] {process_utils.py:190} INFO - DEBUG  | Query adventureworks.dim_product_category.aggregation[0]:
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - SELECT
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO -   COUNT(*),
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO -   COUNT(CASE WHEN product_category_key IS NULL THEN 1 END),
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO -   COUNT(CASE WHEN english_product_category_name IS NULL THEN 1 END)
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - FROM public.dim_product_category
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - DEBUG  | Query adventureworks.dim_product_category.schema[dim_product_category]:
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - SELECT column_name, data_type, is_nullable
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - FROM information_schema.columns
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - WHERE lower(table_name) = 'dim_product_category'
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO -   AND lower(table_catalog) = 'postgres'
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO -   AND lower(table_schema) = 'public'
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - ORDER BY ORDINAL_POSITION
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - INFO   | Scan summary:
+[2024-01-12T16:14:07.598-0300] {process_utils.py:190} INFO - DEBUG  | 2/2 queries OK
+[2024-01-12T16:14:07.599-0300] {process_utils.py:190} INFO - DEBUG  |   adventureworks.dim_product_category.aggregation[0] [OK] 0:00:00.002218
+[2024-01-12T16:14:07.599-0300] {process_utils.py:190} INFO - DEBUG  |   adventureworks.dim_product_category.schema[dim_product_category] [OK] 0:00:00.008873
+[2024-01-12T16:14:07.599-0300] {process_utils.py:190} INFO - INFO   | 4/4 checks PASSED:
+[2024-01-12T16:14:07.599-0300] {process_utils.py:190} INFO - INFO   |     dim_product_category in adventureworks
+[2024-01-12T16:14:07.599-0300] {process_utils.py:190} INFO - INFO   |       Schema Check [/home/user/projects/newproj/soda/soda/checks/ingest/dim_product_category.yml] [PASSED]
+[2024-01-12T16:14:07.600-0300] {process_utils.py:190} INFO - INFO   |         schema_measured = [product_category_key integer, product_category_alternate_key integer, english_product_category_name character varying, spanish_product_category_name character varying, french_product_category_name character varying]
+[2024-01-12T16:14:07.600-0300] {process_utils.py:190} INFO - INFO   |       Categories are stable [/home/user/projects/newproj/soda/soda/checks/ingest/dim_product_category.yml] [PASSED]
+[2024-01-12T16:14:07.600-0300] {process_utils.py:190} INFO - INFO   |         check_value: 0.0
+[2024-01-12T16:14:07.600-0300] {process_utils.py:190} INFO - INFO   |         historic_value: 4.0
+[2024-01-12T16:14:07.600-0300] {process_utils.py:190} INFO - INFO   |         metric_value: 4
+[2024-01-12T16:14:07.600-0300] {process_utils.py:190} INFO - INFO   |       All categories have a key [/home/user/projects/newproj/soda/soda/checks/ingest/dim_product_category.yml] [PASSED]
+[2024-01-12T16:14:07.601-0300] {process_utils.py:190} INFO - INFO   |         check_value: 0
+[2024-01-12T16:14:07.601-0300] {process_utils.py:190} INFO - INFO   |       All categories have a name [/home/user/projects/newproj/soda/soda/checks/ingest/dim_product_category.yml] [PASSED]
+[2024-01-12T16:14:07.601-0300] {process_utils.py:190} INFO - INFO   |         check_value: 0
+[2024-01-12T16:14:07.601-0300] {process_utils.py:190} INFO - INFO   | All is good. No failures. No warnings. No errors.
+[2024-01-12T16:14:07.601-0300] {process_utils.py:190} INFO - INFO   | Sending results to Soda Cloud
+[2024-01-12T16:14:07.601-0300] {process_utils.py:190} INFO - INFO   | Soda Cloud Trace: 5959104462222468052
+[2024-01-12T16:14:08.575-0300] {python.py:201} INFO - Done. Returned value was: 0
+[2024-01-12T16:14:08.606-0300] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=model_adventureworks_sales_category, task_id=checks_ingest, execution_date=20240112T191109, start_date=20240112T191250, end_date=20240112T191408
+[2024-01-12T16:14:08.629-0300] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-12T16:14:08.653-0300] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

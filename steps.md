@@ -1,5 +1,8 @@
+--pasos preliminares--
+
 # ES 0. crear (y pullear) repo para tener todo lo de soda en algún lugar
 # EN 0. create (and pull) a repo to have somewhere to save all soda stuff
+# 0.1 instalar WSL en VSCode (en extensiones)
 
 # ES 1. activar entorno virtual (.venv)
 # EN 1. activate virtual environment (.venv)
@@ -13,6 +16,9 @@
 # ES 3. levantar la imagen en Docker de la DB on-prem con
 # EN 3. deploy Docker image for an on-prem DB with
     docker run --name sip-of-soda -p 5432:5432 -e POSTGRES_PASSWORD=secret sodadata/soda-adventureworks
+    (importante para tener la base de datos andando)
+
+--desde acá empiezan los pasos de SODA--
 
 # ES 4. crear un archivo de configuración
 # EN 4. create a configuration file
@@ -43,7 +49,7 @@
     e ir armando los checks
 ## ES 6b. correr checks
 ## EN 6b. run checks
-    soda scan -d adventureworks -c configuration.yml checks.yml [-T templates.yml]
+    soda scan -d adventureworks -c configuration.yml checks.yml -T templates.yml
 
 # ES 7. usar soda suggest
 # EN 7. use soda suggest
@@ -58,7 +64,7 @@
     (usamos Slack)
 ## ES 8.2. configurar un atributo para los checks
 ## EN 8.2. configure an attribute for checks 
-    dimensión con accuracy (acierto), completeness (completitud), consistency (consistencia), timeliness (temporalidad), validity (validez), y uniqueness (unicidad)
+    dimensión con accuracy (precisión), completeness (completitud), consistency (consistencia), timeliness (temporalidad), validity (validez), y uniqueness (unicidad)
 ## ES 8.3. configurar un atributo para los datasets
 ## EN 8.3. configure an attribute for datasets
     dimensión multivariable con los distintos datasets
@@ -81,7 +87,10 @@
 ## 11.1. con Airflow/DBT
     si no carga, acordate de copiar la ruta de /airflow y hacer
     export AIRFLOW_HOME=*tu ruta*
+    si no carga, acordate de copiar la ruta de /airflow y hacer
+    export AIRFLOW_HOME=*tu ruta*
 ## 11.2. con GitHub Actions
+    hicimos otra rama (test) para poder correr el pull request
     hicimos otra rama (test) para poder correr el pull request
 
 # ES 12. crear un reporte
@@ -92,6 +101,7 @@
 ## ES 12.2 usar una herramienta BI
 ## EN 12.2 use a BI tool
     con PowerBI, armar un reporte para datasets, dimensiones y checkeos
-ñ
+    URL: https://app.powerbi.com/groups/me/reports/5cdd0924-f30c-4b0a-9b5e-3b590e310721/ReportSection?experience=power-bi
+
 # ES 13. contactar a quien corresponda
 # EN 13. get in touch with whoever's relevant
