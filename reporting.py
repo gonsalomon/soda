@@ -62,7 +62,7 @@ def push_to_db(
     db_url_string = URL(**asdict(db_credentials))
     sql_engine = create_engine(db_url_string)
     logger.info("Pushing data to %s", qualified_target_table_name)
-    # We didn't use SQL format to export the df, but a csv we'd later use for PowerBI analysis
+    # We used a csv in case Snowflake wasn't working
     df.to_csv('dataset.csv', index=False)
     df.to_sql(qualified_target_table_name, con=sql_engine, if_exists=if_exists, index=False)
     logger.info("Data successfully pushed to %s", qualified_target_table_name)
