@@ -49,7 +49,7 @@
     e ir armando los checks
 ## ES 6b. correr checks
 ## EN 6b. run checks
-    soda scan -d adventureworks -c configuration.yml checks.yml [-T templates.yml]
+    soda scan -d adventureworks -c configuration.yml checks.yml -T templates.yml
 
 # ES 7. usar soda suggest
 # EN 7. use soda suggest
