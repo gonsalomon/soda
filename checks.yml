@@ -4,7 +4,7 @@ checks for dim_customer:
             name: Ensure values in this flag field are binary (yes or no).
       - invalid_percent(marital_status) = 0: #validity 2
             valid max length: 10
-      - invalid_percent(marital_status) = 0: #validity three
+      - invalid_percent(marital_status) = 0: #validity 3
             valid min length: 1
       - duplicate_count(phone) = 0: #numeric 1
             name: No duplicate phone numbers
