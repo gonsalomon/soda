@@ -14,7 +14,7 @@ checks for dim_customer:
             name: Warn when there are more that 5 duplicate email addresses and fail when greater than 10.
       - invalid_count(first_name) = 0: #validity 4
             invalid values: [Antonio]
-            name: Antonio es un gil
+            name: There shouldn't be someone named Antonio, should it?
       - distribution_difference(number_cars_owned) > 0.1: #distribution
             method: chi_square
             distribution reference file: ./distribution_reference.yml
